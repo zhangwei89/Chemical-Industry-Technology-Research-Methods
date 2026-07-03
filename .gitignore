@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+*.egg
+
+# MkDocs 构建产物（由 GitHub Actions 重新构建）
+/site/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 临时与日志
+*.log
+*.tmp
+*.bak
+
+# 自检日志（每次构建重写）
+/04_自检/mkdocs_build*.log
+/04_自检/pip_install.log
+/04_自检/字数汇总.txt

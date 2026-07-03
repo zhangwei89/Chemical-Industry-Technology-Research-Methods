@@ -1,0 +1,37 @@
+/* 自定义样式 — 化工技术研究方法 */
+:root {
+  --md-text-font: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+.md-grid {
+  max-width: 72rem;
+}
+
+/* 章节首页加一个封面卡片 */
+.md-content article p:first-of-type {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* mermaid 流程图居中 */
+.mermaid {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+  background: transparent !important;
+}
+
+/* 表格样式微调 */
+table:not([class]) {
+  font-size: 0.85rem;
+}
+
+table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* 学习目标列表 */
+blockquote p:first-of-type {
+  font-weight: 500;
+}
