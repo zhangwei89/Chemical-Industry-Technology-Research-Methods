@@ -35,3 +35,10 @@ desktop.ini
 /04_自检/mkdocs_build*.log
 /04_自检/pip_install.log
 /04_自检/字数汇总.txt
+_elev*.ps1
+_gitconfig_new
+docs/
+_elev.log
+_elev2.log
+_elev3.log
+_*.log
