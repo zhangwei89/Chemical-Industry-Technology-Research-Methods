@@ -1,166 +1,50 @@
 site_name: 化工行业技术研究方法
-site_description: 从科研选题到工业化应用 — 一线研发工程师的系统教材
-site_author: 化工研发方法编写组
-copyright: 化工研发方法编写组 · 内容仅供学习参考
+site_description: 面向化工方向技术人员做技术调研、对标分析与报告撰写的方法手册。
+site_url: https://zhangwei89.github.io/Chemical-Industry-Technology-Research-Methods/
+repo_url: https://github.com/zhangwei89/Chemical-Industry-Technology-Research-Methods
+repo_name: zhangwei89/Chemical-Industry-Technology-Research-Methods
+copyright: Copyright © 2026 zhangwei89
 
-# 文档源目录
-docs_dir: 01_正文
-site_dir: site
-
-# 主题：Material
 theme:
   name: material
   language: zh
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - navigation.indexes
-    - navigation.tracking
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-    - content.action.edit
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换到暗黑模式
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: 切换到明亮模式
+    primary: red
+    accent: red
   font:
     text: Noto Sans SC
     code: JetBrains Mono
   icon:
     repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
 
-# 扩展 Markdown 语法
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
-  - abbr
   - admonition
   - attr_list
-  - def_list
-  - footnotes
   - md_in_html
   - tables
   - toc:
       permalink: true
       toc_depth: 3
   - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.caret
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
 
-# 导航结构
-nav:
-  - 首页: README.md
-  - 前言: 00_前言.md
-  - 第一篇 化工技术研究基础:
-      - 第 01 章 化工技术研究概述: 第01章_化工技术研究概述.md
-      - 第 02 章 技术问题识别: 第02章_技术问题识别.md
-      - 第 03 章 技术调研方法: 第03章_技术调研方法.md
-  - 第二篇 技术研究设计:
-      - 第 04 章 技术路线设计: 第04章_技术路线设计.md
-      - 第 05 章 实验方案设计: 第05章_实验方案设计.md
-      - 第 06 章 工艺研究方法: 第06章_工艺研究方法.md
-      - 第 07 章 装备研发方法: 第07章_装备研发方法.md
-  - 第三篇 数据研究方法:
-      - 第 08 章 数据采集: 第08章_数据采集.md
-      - 第 09 章 数据分析: 第09章_数据分析.md
-      - 第 10 章 建模与模拟: 第10章_建模与模拟.md
-  - 第四篇 化工研发核心方法:
-      - 第 11 章 工艺开发方法: 第11章_工艺开发方法.md
-      - 第 12 章 产品开发方法: 第12章_产品开发方法.md
-      - 第 13 章 安全研究方法: 第13章_安全研究方法.md
-      - 第 14 章 环保研究方法: 第14章_环保研究方法.md
-  - 第五篇 中试放大研究:
-      - 第 15 章 中试研究: 第15章_中试研究.md
-      - 第 16 章 放大规律: 第16章_放大规律.md
-      - 第 17 章 工业化验证: 第17章_工业化验证.md
-  - 第六篇 技术创新方法:
-      - 第 18 章 创新思维: 第18章_创新思维.md
-      - 第 19 章 专利研发: 第19章_专利研发.md
-      - 第 20 章 科研项目管理: 第20章_科研项目管理.md
-  - 第七篇 技术成果形成:
-      - 第 21 章 技术报告编写: 第21章_技术报告编写.md
-      - 第 22 章 标准制定: 第22章_标准制定.md
-      - 第 23 章 成果评价: 第23章_成果评价.md
-  - 第八篇 数字化研发:
-      - 第 24 章 AI 赋能化工研发: 第24章_AI赋能化工研发.md
-      - 第 25 章 数字孪生: 第25章_数字孪生.md
-      - 第 26 章 智能制造: 第26章_智能制造.md
-  - 第九篇 典型案例:
-      - 第 27 章 新产品开发案例: 第27章_新产品开发案例.md
-      - 第 28 章 工艺优化案例: 第28章_工艺优化案例.md
-      - 第 29 章 装备创新案例: 第29章_装备创新案例.md
-      - 第 30 章 工业化案例: 第30章_工业化案例.md
-  - 附录:
-      - 附录 A 常用化工研发流程图: 附录A_常用化工研发流程图.md
-      - 附录 B 实验设计（DOE）模板: 附录B_实验设计DOE模板.md
-      - 附录 C HAZOP 分析表模板: 附录C_HAZOP分析表模板.md
-      - 附录 D 技术路线图模板: 附录D_技术路线图模板.md
-      - 附录 E 科研项目计划书模板: 附录E_科研项目计划书模板.md
-      - 附录 F 技术经济评价模板: 附录F_技术经济评价模板.md
-      - 附录 G 中试方案模板: 附录G_中试方案模板.md
-      - 附录 H 工业试车方案模板: 附录H_工业试车方案模板.md
-      - 附录 I 技术总结报告模板: 附录I_技术总结报告模板.md
-      - 附录 J 常用标准与规范目录: 附录J_化工研发常用标准与规范目录.md
-
-# 插件
 plugins:
-  - search:
-      lang: zh
-      separator: '[\s\-\.]+'
-
-# 校验：禁用警告升级为错误
-strict: false
-
-# 仓库链接（部署后用户可改成自己的）
-repo_name: Chemical-Industry-Technology-Research-Methods
-repo_url: https://github.com/zhangwei89/Chemical-Industry-Technology-Research-Methods
-edit_uri: edit/main/01_正文/
-
-# 版权信息
-extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/zhangwei89/book1
-      name: GitHub 仓库
-
-# 错误页提示
-extra_css:
-  - stylesheets/extra.css
+  - search
